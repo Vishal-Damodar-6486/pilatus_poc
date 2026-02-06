@@ -1,0 +1,66 @@
+{
+    "Upper_Skin_Panel": {
+        "1": {
+            "Applied_Load": 0.8762944340705872,
+            "Allowable": 28.56,
+            "RF": 32.59,
+            "Failure_Mode": "Shear"
+        },
+        "2": {
+            "Applied_Load": 0.876621425151825,
+            "Allowable": 28.56,
+            "RF": 32.58,
+            "Failure_Mode": "Shear"
+        },
+        "3": {
+            "Applied_Load": 0.8036208748817444,
+            "Allowable": 28.56,
+            "RF": 35.54,
+            "Failure_Mode": "Shear"
+        },
+        "4": {
+            "Applied_Load": 0.8034958839416504,
+            "Allowable": 28.56,
+            "RF": 35.54,
+            "Failure_Mode": "Shear"
+        },
+        "5": {
+            "Applied_Load": 0.3640309274196625,
+            "Allowable": 28.56,
+            "RF": 78.45,
+            "Failure_Mode": "Shear"
+        }
+    },
+    "Front_Spar_Splice": {
+        "1": {
+            "Applied_Load": 9147.61,
+            "Allowable": 1334.0,
+            "RF": 0.15,
+            "Failure_Mode": "Resultant Shear"
+        },
+        "2": {
+            "Applied_Load": 9156.61,
+            "Allowable": 1334.0,
+            "RF": 0.15,
+            "Failure_Mode": "Resultant Shear"
+        },
+        "3": {
+            "Applied_Load": 11647.21,
+            "Allowable": 1334.0,
+            "RF": 0.11,
+            "Failure_Mode": "Resultant Shear"
+        },
+        "4": {
+            "Applied_Load": 11645.7,
+            "Allowable": 1334.0,
+            "RF": 0.11,
+            "Failure_Mode": "Resultant Shear"
+        },
+        "5": {
+            "Applied_Load": 3700.97,
+            "Allowable": 1334.0,
+            "RF": 0.36,
+            "Failure_Mode": "Resultant Shear"
+        }
+    }
+}
