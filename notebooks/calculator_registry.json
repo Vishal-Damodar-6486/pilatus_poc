@@ -1,0 +1,26 @@
+{
+    "Skin_Panel": {
+        "description": "Any Upper/Lower Skin Panel",
+        "driver": "excel_simple",
+        "filename": "ER_24_000618_01_Upper_Panel_Analysis_Intact.xlsx",
+        "sheet": "8",
+        "inputs": { "Fx_Nmm": "B33", "Fy_Nmm": "C33", "Fxy_Nmm": "D33" },
+        "output_rf": "P33"
+    },
+    "Rib": {
+        "description": "Intermediate Ribs (1-18)",
+        "driver": "excel_master",
+        "filename": "ER-24-00618_01_Flap_Intermediate_Ribs_Sizing_Normal_v1.0.xlsm",
+        "output_sheet": "RF",
+        "output_cell_rf": "E4",
+        "output_cell_loc": "G4"
+    },
+    "Shear_Clip": {
+        "description": "Splice Joints",
+        "driver": "excel_simple",
+        "filename": "ER-24-00618_01_Flap_FlapShearClip_Sizing_Normal_v1.0.xlsm",
+        "sheet": "Splice Section check",
+        "inputs": { "Fx": "N5", "Fy": "M5", "Mz": "O5" },
+        "output_rf": "S5"
+    }
+}

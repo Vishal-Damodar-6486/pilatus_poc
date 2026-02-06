@@ -10,3 +10,9 @@ langchain
 langchain-google-genai
 streamlit
 requests
+tabulate
+pyvista 
+vtk 
+matplotlib
+markdown 
+xhtml2pdf
