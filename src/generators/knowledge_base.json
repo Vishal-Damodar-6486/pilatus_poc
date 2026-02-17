@@ -1,0 +1,49 @@
+{
+    "Skin Panels": {
+        "description": "Aircraft skin panels are the outer structural layer responsible for carrying aerodynamic pressure loads and shear flows. They are critical for maintaining the aerodynamic shape and torsional stiffness of the wing box.",
+        "material": "Aluminium 2024-T3 (Clad). This alloy provides excellent fatigue resistance and high fracture toughness, making it ideal for tension-dominated lower wing skins.",
+        "analysis_method": "Post-buckling strength is evaluated using Diagonal Tension Field Theory (NACA TN 2661). Shear buckling capabilities are derived from ESDU 75014.",
+        "failure_modes": [
+            "Shear Buckling",
+            "Material Yield"
+        ]
+    },
+    "Structural Elements (Panels & Shells)": {
+        "description": "This section covers general shell elements including skin panels and intermediate webs. These components are sized primarily for stability (buckling) and shear flow transfer.",
+        "material": "Aluminium 2024-T3. Standard skin material optimized for damage tolerance.",
+        "analysis_method": "Stability analysis is performed using semi-empirical plate buckling equations. Plasticity correction factors are applied for stresses exceeding the proportional limit.",
+        "failure_modes": [
+            "Shear Buckling",
+            "Crippling",
+            "Inter-rivet Buckling"
+        ]
+    },
+    "Joints & Interface Loads": {
+        "description": "Joints and fittings transfer loads between major structural assemblies. These are often the most critical fatigue locations due to stress concentrations at fastener holes.",
+        "material": "Ti-6Al-4V (Titanium Alloy). Used for high-load fittings to prevent galvanic corrosion with CF structures and provide high bearing strength.",
+        "analysis_method": " fastener joint analysis is conducted per MIL-HDBK-5J. Bearing and shear-out margins are calculated for worst-case bolt loads extracted from the FEM.",
+        "failure_modes": [
+            "Bearing Yield",
+            "Shear Tear-out",
+            "Net-Section Tension"
+        ]
+    },
+    "Rib Structure": {
+        "description": "Ribs are transverse structural members that maintain the airfoil shape and distribute concentrated loads (such as those from flap tracks or landing gear) into the skin and spars. They also prevent buckling of the skin stringers.",
+        "material": "Aluminium 7075-T651. Chosen for its high strength-to-weight ratio, this alloy is standard for compression-dominated internal structures.",
+        "analysis_method": "Rib webs are analyzed as shear resistant panels. Flange stability is checked against crippling and inter-rivet buckling criteria per Bruhn Section C.",
+        "failure_modes": [
+            "Shear Crippling",
+            "Flange Buckling"
+        ]
+    },
+    "Spars & Webs": {
+        "description": "Spars are the main longitudinal beams of the wing, carrying the primary bending moments and vertical shear forces. The spar webs primarily carry shear loads, while the caps carry the bending end loads.",
+        "material": "Aluminium 7050-T7451. This plate material offers a superior balance of strength, stress-corrosion cracking resistance, and toughness for heavy-section components.",
+        "analysis_method": "Beam theory is used for initial sizing, followed by detailed FEA extraction for cap stresses. Web shear buckling is substantiated using interaction curves for combined shear and bending.",
+        "failure_modes": [
+            "Column Buckling",
+            "Shear Yield"
+        ]
+    }
+}

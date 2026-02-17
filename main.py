@@ -169,11 +169,13 @@ async def create_pdf_report(request: ReportRequest):
         markdown_text = generate_full_report_markdown(structured_data)
         
         # 3. Convert to PDF (The Printer)
-        pdf_bytes = convert_markdown_to_pdf(markdown_text)
+        pdf_buffer = convert_markdown_to_pdf(markdown_text)
+        
+        pdf_buffer.seek(0)
         
         # 4. Return Binary Stream
         return Response(
-            content=pdf_bytes, 
+            content=pdf_buffer.read(), 
             media_type="application/pdf",
             headers={"Content-Disposition": "attachment; filename=Certification_Report.pdf"}
         )

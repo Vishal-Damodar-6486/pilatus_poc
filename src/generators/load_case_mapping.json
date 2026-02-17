@@ -1,0 +1,12 @@
+{
+    "1": "2.5g Symmetric Maneuver",
+    "2": "-1.0g Pushover",
+    "3": "Gust Up 66ft/s",
+    "4": "Gust Down 66ft/s",
+    "5": "Landing Impact (Sink Rate 10ft/s)",
+    "6": "Ground Handling - Jacking",
+    "101": "Flap Deployment - Takeoff",
+    "102": "Flap Deployment - Landing",
+    "201": "Cabin Pressurization (Max Diff)",
+    "default": "Generic Flight Condition"
+}

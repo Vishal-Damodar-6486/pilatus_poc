@@ -1,0 +1,45 @@
+{
+    "report_title": "Automated Stress Analysis: Flap & Support Structure",
+    "report_number": "ER-24-AUTO-001",
+    "issue": "01",
+    "aircraft_type": "PC-24",
+    "applicability": [
+        {
+            "pn": "557.10.24.102",
+            "desc": "Wing Assembly, LH"
+        },
+        {
+            "pn": "557.60.24.913",
+            "desc": "Flap Support Structure, LH"
+        },
+        {
+            "pn": "557.60.24.914",
+            "desc": "Flap Support Structure, RH"
+        }
+    ],
+    "compliance": {
+        "basis": "EASA CS-23 Amendment 3",
+        "paragraphs": [
+            {
+                "id": "CS 23.305",
+                "desc": "Strength and Deformation"
+            },
+            {
+                "id": "CS 23.307",
+                "desc": "Proof of Structure"
+            },
+            {
+                "id": "CS 23.625",
+                "desc": "Fitting Factors"
+            },
+            {
+                "id": "CS 23.571",
+                "desc": "Metallic Fatigue Strength"
+            },
+            {
+                "id": "CS 23.603",
+                "desc": "Materials and Workmanship"
+            }
+        ]
+    }
+}
